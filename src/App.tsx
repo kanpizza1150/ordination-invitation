@@ -57,16 +57,23 @@ export default function App() {
       transform=""
       className="h-screen w-screen flex items-center justify-center p-5 flex-col gap-3 bg-gold-1 bg-opacity-5"
     >
-      <div className="flex flex-col justify-center items-center w-full ">
-        <h1 className="text-lg font-semibold text-gold-1">งานอุปสมบท</h1>
-        <h1 className="text-3xl font-semibold text-gold-1">เกรท</h1>
-        <h1 className="text-xl font-semibold text-gold-1">
-          นายสุรชา นกทองอุทัย
-        </h1>{" "}
-        <h1 className="text-xl font-semibold ">๗ มิถุนายน ๒๕๖๗</h1>
+      <div className="flex gap-3 md:gap-5 items-center justify-center">
+        <div className="flex flex-col gap-0 leading-3 items-center m-auto">
+          <p className="text-7xl text-gold-1 leading-10 pb-2">๗</p>
+          <p className="text-lg text-gold-1 leading-6">มิถุนายน</p>
+          <p className="text-lg text-gold-1 leading-6">๒๕๖๗</p>
+        </div>
+        <div className="h-full border-r-2 border-gold-1" />
+        <div className="flex flex-col items-center justify-center">
+          <h1 className="text-lg text-gray-2">งานอุปสมบท</h1>
+          <h1 className="text-2xl text-gold-1 font-bold text-center">
+            นายสุรชา นกทองอุทัย (เกรท)
+          </h1>
+          <h1 className="text-sm text-gray-2">ณ พัทธสีมาวัดโชติทายการาม</h1>
+        </div>
       </div>
-      <div className="rounded-lg  overflow-hidden flex flex-col w-full h-[70dvh]  items-center max-w-screen-md bg-white ">
-        <div className="flex w-full">
+      <div className="rounded-lg  overflow-hidden flex flex-col w-full h-[75dvh] shadow-sm items-center max-w-screen-md bg-white ">
+        <div className="flex w-full justify-between md:justify-start">
           {tabs.map((tab) => {
             const isSelected = activeTab.name === tab.name
             return (
@@ -78,7 +85,7 @@ export default function App() {
                 <div
                   className={cn(
                     "flex items-center justify-center text-center w-full text-gold-1 z-10",
-                    isSelected ? "text-white font-bold" : ""
+                    isSelected ? "text-white" : ""
                   )}
                 >
                   {tab.label}
@@ -116,6 +123,7 @@ export default function App() {
           </AnimatePresence>
         </div>
       </div>
+      <p className="text-xs font-light">(ขออภัยหากไม่ได้เรียนเชิญด้วยตัวเอง)</p>
     </AnimatedSection>
   )
 }

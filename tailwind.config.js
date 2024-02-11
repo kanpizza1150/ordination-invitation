@@ -11,6 +11,7 @@ export default {
         "gold-1": "#9D8B45",
         "gold-2": "#cba45d",
         "gray-1": "#cdcdc3",
+        "gray-2": "#595756",
       },
     },
   },
