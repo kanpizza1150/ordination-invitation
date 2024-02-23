@@ -117,6 +117,7 @@ export default function App() {
               transition={{
                 duration: 0.3,
               }}
+              className="h-full"
             >
               {activeTab && activeTab?.render()}
             </motion.div>
