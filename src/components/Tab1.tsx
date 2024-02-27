@@ -1,5 +1,7 @@
 import { useMemo } from "react"
-
+function replaceAll(str: string, find: string, replace: string) {
+  return str.replace(new RegExp(find, "g"), replace)
+}
 const Tab1 = () => {
   const searchParam = useMemo(
     () => new URLSearchParams(window?.location?.search),
@@ -12,7 +14,7 @@ const Tab1 = () => {
         <div className="flex flex-col items-center justify-center gap-1">
           <p className="text-center text-xs">มีความยินดีขอเรียนเชิญ</p>
           <p className="text-lg text-center text-gold-1 font-semibold italic">
-            {guest}
+            {replaceAll(guest, "%20", "")}
           </p>
           <p className="text-center text-xs">
             ร่วมอนุโมทนาบุญ เนื่องในงานอุปสมบท
