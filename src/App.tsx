@@ -59,9 +59,13 @@ export default function App() {
     >
       <div className="flex gap-3 md:gap-5 items-center justify-center">
         <div className="flex flex-col gap-0 leading-3 items-center m-auto">
-          <p className="text-7xl text-gold-1 leading-10 pb-2">๗</p>
-          <p className="text-lg text-gold-1 leading-6">มิถุนายน</p>
-          <p className="text-lg text-gold-1 leading-6">๒๕๖๗</p>
+          <p className="text-5xl text-gold-1 leading-10 pb-2 tracking-wide">
+            ๖-๗
+          </p>
+          <p className="text-lg text-gold-1 tracking-widest leading-6">
+            มิถุนายน
+          </p>
+          <p className="text-lg text-gold-1 tracking-widest leading-6">๒๕๖๗</p>
         </div>
         <div className="h-full border-r-2 border-gold-1" />
         <div className="flex flex-col items-center justify-center">
