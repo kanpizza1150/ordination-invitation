@@ -17,14 +17,15 @@ const Tab1 = () => {
             {replaceAll(guest, "%20", "")}
           </p>
           <p className="text-center text-xs">
-            ร่วมอนุโมทนาบุญ เนื่องในงานอุปสมบท
+            ไปร่วมอนุโมทนาบุญ เนื่องในงานอุปสมบท
           </p>
         </div>
       )
     }
     return (
       <p className="text-center">
-        มีความยินดีขอเรียนเชิญท่านร่วมอนุโมทนาบุญ เนื่องในงานอุปสมบท
+        มีความยินดีขอเรียนเชิญญาติ มิตร และท่านที่เคารพนับถือ ไปร่วมอนุโมทนาบุญ
+        เนื่องในงานอุปสมบท
       </p>
     )
   }, [guest])
@@ -39,7 +40,7 @@ const Tab1 = () => {
             สส.ชัยทิพย์ (สส.เส็ง) กมลพันธ์ทิพย
           </p>
           <p className="font-semibold text-sm">คุณยายฮุ่ยเค็ง (หมวย) แซ่เฮ้ง</p>
-          <p className="text-xs">(ประทาน)</p>
+          <p className="text-xs">(ประธาน)</p>
         </div>
         <div className="flex flex-col p-2 justify-center items-center rounded-md text-gold-1 ">
           <p className="font-semibold text-sm">

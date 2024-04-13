@@ -55,7 +55,7 @@ export default function App() {
   return (
     <AnimatedSection
       transform=""
-      className="max-h-h-[100dvh] h-[100dvh] w-screen flex items-center justify-center p-5 flex-col gap-3 bg-gold-1 bg-opacity-5"
+      className="min-h-[100dvh] h-[100dvh] w-screen flex items-center justify-center p-5 flex-col gap-3 bg-gold-1 bg-opacity-5"
     >
       <div className="flex gap-3 md:gap-5 items-center justify-center">
         <div className="flex flex-col gap-0 leading-3 items-center m-auto">
