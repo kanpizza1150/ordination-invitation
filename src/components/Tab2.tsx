@@ -7,7 +7,7 @@ import section22 from "../assets/icons/section22.webp"
 const section1 = [
   {
     time: "๐๘.๓๐ น.",
-    label: "พิธีปลงผมนาค",
+    label: "ปลงผมนาค",
     icon: section11,
   },
   {
@@ -29,7 +29,7 @@ const section1 = [
 const section2 = [
   {
     time: "๐๘.๐๐ น.",
-    label: "พิธีแห่นาคเข้าอุปสมบท",
+    label: "นำนาคเข้าอุปสมบท",
     icon: section21,
   },
   {
