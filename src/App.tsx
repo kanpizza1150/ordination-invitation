@@ -128,7 +128,7 @@ export default function App() {
           </AnimatePresence>
         </div>
       </div>
-      <p className="text-xs font-light">(ขออภัยหากไม่ได้เรียนเชิญด้วยตัวเอง)</p>
+      <p className="text-xs font-light">(ขออภัยหากมิได้เรียนเชิญด้วยตนเอง)</p>
     </AnimatedSection>
   )
 }

@@ -28,19 +28,28 @@ const Tab1 = () => {
       </p>
     )
   }, [guest])
+
   return (
-    <div className="flex flex-col gap-4 justify-between h-full">
-      <div className="flex flex-col p-2 justify-center items-center rounded-md text-gold-1 ">
-        <p className="font-semibold text-sm">
-          นาง ฮุ่ยเค็ง แซ่เฮ้ง <span className="text-xs">(ยาย)</span>
-        </p>
-        <p className="font-semibold text-sm">
-          ร.ต.ต. สมโภช นกทองอุทัย <span className="text-xs">(บิดา)</span>
-        </p>
-        <p className="font-semibold text-sm">
-          นาง วิมลนันท์ นกดำ <span className="text-xs">(มารดา)</span>
-        </p>
-        <p className="text-xs">(เจ้าภาพ)</p>
+    <div className="flex flex-col gap-3 justify-between h-full">
+      <div className="flex flex-col gap-1">
+        <div className="flex flex-col p-2 justify-center items-center rounded-md text-gold-1 ">
+          <p className="font-semibold text-sm">นายวิวัฒน์ นิติกาญจนา</p>
+          <p className="font-semibold text-sm">สส.บุญยิ่ง นิติกาญจนา</p>
+          <p className="font-semibold text-sm">
+            สส.ชัยทิพย์ (สส.เส็ง) กมลพันธ์ทิพย
+          </p>
+          <p className="font-semibold text-sm">คุณยายฮุ่ยเค็ง (หมวย) แซ่เฮ้ง</p>
+          <p className="text-xs">(ประทาน)</p>
+        </div>
+        <div className="flex flex-col p-2 justify-center items-center rounded-md text-gold-1 ">
+          <p className="font-semibold text-sm">
+            ร.ต.ต. สมโภช นกทองอุทัย <span className="text-xs">(บิดา)</span>
+          </p>
+          <p className="font-semibold text-sm">
+            สท. วิมลนันท์ นกดำ <span className="text-xs">(มารดา)</span>
+          </p>
+          <p className="text-xs">(เจ้าภาพ)</p>
+        </div>
       </div>
       {invite}
       <div>
