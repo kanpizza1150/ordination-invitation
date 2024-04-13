@@ -12,7 +12,7 @@ const section1 = [
   },
   {
     time: "๑๐.๐๐ น.",
-    label: "สวดมนต์ฉลองไตร",
+    label: "เจริญพระพุทธมนต์ฉลองไตร",
     icon: section12,
   },
   {
@@ -34,7 +34,7 @@ const section2 = [
   },
   {
     time: "๑๑.๐๐ น.",
-    label: "ฉลองพระใหม่",
+    label: "ถวายภัตตาหารเพล ฉลองพระใหม่",
     icon: section22,
   },
 ]
