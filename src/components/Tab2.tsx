@@ -34,7 +34,7 @@ const section2 = [
   },
   {
     time: "๑๑.๐๐ น.",
-    label: "พิธีฉลองพระบวชใหม่",
+    label: "ฉลองพระใหม่",
     icon: section22,
   },
 ]
