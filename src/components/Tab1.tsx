@@ -43,7 +43,9 @@ const Tab1 = () => {
           <p className="text-xs">(ประธาน)</p>
         </div>
         <div className="flex flex-col p-2 justify-center items-center rounded-md text-gold-1 ">
-          <p className="text-xs">(บิดา-มารดา)</p>
+          <p className="font-semibold text-sm">ร.ต.ต. สมโภช นกทองอุทัย</p>
+          <p className="font-semibold text-sm">สท. วิมลนันท์ นกดำ</p>
+          <p className="text-xs">(บิดา- มารดา)</p>
         </div>
       </div>
       {invite}
