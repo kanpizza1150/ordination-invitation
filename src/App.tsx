@@ -55,10 +55,19 @@ export default function App() {
   return (
     <AnimatedSection
       transform=""
-      className="min-h-[800px] h-[100dvh] w-screen flex items-center justify-center p-5 flex-col gap-3 bg-gold-1 bg-opacity-5 bg-[url('./assets/bg.gif')] bg-cover  bg-center bg"
+      className="min-h-[800px] h-[100dvh] w-screen flex items-center justify-center p-5 flex-col gap-3 bg-gold-1 bg-opacity-5 bg-[url('./assets/bg.gif')] bg-cover  bg-center md:bg-contain"
     >
-      <div className="flex gap-3 md:gap-5 items-center justify-center  rounded-lg p-1 py-2 backdrop-blur-sm bg-white/70">
-        <div className="flex flex-col gap-0 leading-3 items-center m-auto">
+      <div
+        className={cn(
+          "flex gap-3 md:gap-5 items-center justify-center  rounded-lg p-1 py-2 backdrop-blur-sm bg-white/70 w-full max-w-screen-md",
+          "sm:grid grid-cols-3"
+        )}
+      >
+        <div
+          className={cn(
+            "flex flex-col gap-0 leading-3 items-center m-auto  border-r-2 border-gold-1 pr-3 sm:pr-0 sm:w-full "
+          )}
+        >
           <p className="text-5xl text-gold-1 leading-10 pb-2 tracking-wide">
             ๖-๗
           </p>
@@ -67,13 +76,14 @@ export default function App() {
           </p>
           <p className="text-lg text-gold-1 tracking-widest leading-6">๒๕๖๗</p>
         </div>
-        <div className="h-full border-r-2 border-gold-1" />
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center col-span-2 w-full">
           <h1 className="text-lg text-gray-2">งานอุปสมบท</h1>
           <h1 className="text-xl sm:text-2xl text-gold-1 font-bold text-center">
             นายสุรชา นกทองอุทัย (เกรท)
           </h1>
-          <h1 className="text-sm text-gray-2">ณ พัทธสีมาวัดโชติทายการาม</h1>
+          <h1 className="text-sm text-gray-2 text-center">
+            ณ พัทธสีมาวัดโชติทายการาม
+          </h1>
         </div>
       </div>
       <div className="rounded-lg  overflow-hidden flex flex-col w-full min-h-[600px] h-[75dvh] shadow-sm items-center max-w-screen-md bg-white ">
