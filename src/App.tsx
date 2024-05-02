@@ -55,9 +55,9 @@ export default function App() {
   return (
     <AnimatedSection
       transform=""
-      className="max-h-h-[100dvh] h-[100dvh] w-screen flex items-center justify-center p-5 flex-col gap-3 bg-gold-1 bg-opacity-5"
+      className="min-h-[800px] h-[100dvh] w-screen flex items-center justify-center p-5 flex-col gap-3 bg-gold-1 bg-opacity-5 bg-[url('./assets/bg.gif')] bg-cover  bg-center bg"
     >
-      <div className="flex gap-3 md:gap-5 items-center justify-center">
+      <div className="flex gap-3 md:gap-5 items-center justify-center  rounded-lg p-1 py-2 backdrop-blur-sm bg-white/70">
         <div className="flex flex-col gap-0 leading-3 items-center m-auto">
           <p className="text-5xl text-gold-1 leading-10 pb-2 tracking-wide">
             ๖-๗
@@ -70,21 +70,28 @@ export default function App() {
         <div className="h-full border-r-2 border-gold-1" />
         <div className="flex flex-col items-center justify-center">
           <h1 className="text-lg text-gray-2">งานอุปสมบท</h1>
-          <h1 className="text-2xl text-gold-1 font-bold text-center">
+          <h1 className="text-xl sm:text-2xl text-gold-1 font-bold text-center">
             นายสุรชา นกทองอุทัย (เกรท)
           </h1>
           <h1 className="text-sm text-gray-2">ณ พัทธสีมาวัดโชติทายการาม</h1>
         </div>
       </div>
-      <div className="rounded-lg  overflow-hidden flex flex-col w-full h-[75dvh] shadow-sm items-center max-w-screen-md bg-white ">
-        <div className="flex w-full justify-between md:justify-start">
+      <div className="rounded-lg  overflow-hidden flex flex-col w-full min-h-[600px] h-[75dvh] shadow-sm items-center max-w-screen-md bg-white ">
+        <div
+          className={cn(
+            "grid grid-cols-3 w-full",
+            "md:flex md:w-full md:justify-start"
+          )}
+        >
           {tabs.map((tab) => {
             const isSelected = activeTab.name === tab.name
             return (
               <div
                 key={tab.name}
                 onClick={(e) => handleClick(e, tab)}
-                className={cn("relative cursor-pointer p-3 flex items-center")}
+                className={cn(
+                  "relative cursor-pointer p-3 flex justify-center items-center text-sm text-center"
+                )}
               >
                 <div
                   className={cn(
@@ -108,7 +115,7 @@ export default function App() {
         </div>
         <div
           className={cn(
-            "w-full flex-1 h-full 0 overflow-auto rounded-b-md p-4 shadow border-t border-gold-2"
+            "w-full flex-1 h-full 0 overflow-auto rounded-b-md p-4 shadow border-t border-gold-1"
           )}
         >
           <AnimatePresence mode="wait">
@@ -128,7 +135,9 @@ export default function App() {
           </AnimatePresence>
         </div>
       </div>
-      <p className="text-xs font-light">(ขออภัยหากไม่ได้เรียนเชิญด้วยตัวเอง)</p>
+      <p className="text-xs font-light text-gold-1">
+        (ขออภัยหากมิได้เรียนเชิญด้วยตนเอง)
+      </p>
     </AnimatedSection>
   )
 }

@@ -12,48 +12,59 @@ const Tab1 = () => {
     if (guest) {
       return (
         <div className="flex flex-col items-center justify-center gap-1 px-2">
-          <p className="text-center text-xs">มีความยินดีขอเรียนเชิญ</p>
-          <p className="text-lg text-center text-gold-1 font-semibold italic">
+          <p className="text-center text-sm italic text-gold-1 ">
+            มีความยินดีขอเรียนเชิญ
+          </p>
+          <p className="text-lg text-center text-gold-1 font-semibold ">
             {replaceAll(guest, "%20", "")}
           </p>
-          <p className="text-center text-xs">
-            ร่วมอนุโมทนาบุญ เนื่องในงานอุปสมบท
+          <p className="text-center text-sm italic text-gold-1 ">
+            ไปร่วมอนุโมทนาบุญ เนื่องในงานอุปสมบท
           </p>
         </div>
       )
     }
     return (
-      <p className="text-center">
+      <p className="text-center italic text-gold-1">
         มีความยินดีขอเรียนเชิญญาติ มิตร และท่านที่เคารพนับถือ ร่วมอนุโมทนาบุญ
         เนื่องในงานอุปสมบท
       </p>
     )
   }, [guest])
+
   return (
     <div className="flex flex-col gap-4 justify-between h-full">
-      <div className="flex flex-col p-2 justify-center items-center rounded-md text-gold-1 ">
-        <p className="font-semibold text-sm">นายวิวัฒน์ นิติกาญจนา</p>
-        <p className="font-semibold text-sm">ส.ส.บุญยิ่ง นิติกาญจนา</p>
-        <p className="font-semibold text-sm">
-          ส.ส.ชัยทิพย์ (ส.ส.เส็ง) กมลพันธ์ทิพย์
-        </p>
-        <p className="font-semibold text-sm">นาง ฮุ่ยเค็ง แซ่เฮ้ง</p>
-        <p className="text-xs">(ประธาน)</p>
-        <p className="font-semibold text-sm">ร.ต.ต. สมโภช นกทองอุทัย</p>
-        <p className="font-semibold text-sm">นาง วิมลนันท์ นกดำ</p>
-        <p className="text-xs">(บิดา-มารดา)</p>
+      <div className="flex flex-col p-2 justify-center items-center rounded-sm text-gold-1 gap-4">
+        <div className="relative flex flex-col justify-center items-center border border-gold-1 rounded-md w-full p-3">
+          <p className="font-semibold">นายวิวัฒน์ นิติกาญจนา</p>
+          <p className="font-semibold">ส.ส.บุญยิ่ง นิติกาญจนา</p>
+          <p className="font-semibold">ส.ส.ชัยทิพย์ (ส.ส.เส็ง) กมลพันธ์ทิพย์</p>
+          <p className="font-semibold">นาง ฮุ่ยเค็ง แซ่เฮ้ง </p>
+          <div className="text-sm bg-white absolute -bottom-3 tracking-wider ">
+            (ประธาน)
+          </div>
+        </div>
+        <div className="relative flex flex-col justify-center items-center border border-gold-1 rounded-md w-full p-3">
+          <p className="font-semibold">ร.ต.ต. สมโภช นกทองอุทัย</p>
+          <p className="font-semibold">นาง วิมลนันท์ นกดำ</p>
+          <div className="text-sm bg-white absolute -bottom-3 tracking-wider ">
+            (บิดา-มารดา)
+          </div>
+        </div>
       </div>
       {invite}
-      <div>
+      <div className="">
         <p className="text-center font-bold text-2xl text-gold-1">
-          นายสุรชา นกทองอุทัย
+          นายสุรชา (เกรท) นกทองอุทัย
         </p>
-        <p className="text-center font-bold text-2xl text-gold-1">(เกรท)</p>
+        <p className="text-center text-gray-2 italic text-sm">
+          ณ พัทธสีมาวัดโชติทายการาม
+        </p>
       </div>
 
       <div className="flex flex-col items-center justify-center gap-1">
         <img alt="temple" src="/temple.svg" className="max-h-[10dvh] h-full" />
-        <p className="text-center text-xs italic">
+        <p className="text-center text-xs italic text-gray-2 ">
           “กรรมใดที่เคยล่วงเกินท่าน ด้วยกายกรรม วจีกรรม มโนกรรม
           ขอโปรดอโหสอกรรมแต่ ผู้อุปสมบทด้วยเถิด”
         </p>
