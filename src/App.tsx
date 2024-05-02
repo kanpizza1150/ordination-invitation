@@ -55,7 +55,7 @@ export default function App() {
   return (
     <AnimatedSection
       transform=""
-      className="min-h-[800px] h-[100dvh] w-screen flex items-center justify-center p-5 flex-col gap-3 bg-gold-1 bg-opacity-5 bg-[url('./assets/bg.gif')] bg-cover  bg-center md:bg-contain"
+      className="min-h-[600px] h-[100dvh] w-screen flex items-center justify-center p-5 flex-col gap-3 bg-gold-1 bg-opacity-5 bg-[url('./assets/bg.gif')] bg-cover  bg-center md:bg-contain"
     >
       <div
         className={cn(
@@ -86,7 +86,7 @@ export default function App() {
           </h1>
         </div>
       </div>
-      <div className="rounded-lg  overflow-hidden flex flex-col w-full min-h-[600px] h-[75dvh] shadow-sm items-center max-w-screen-md bg-white ">
+      <div className="rounded-lg  overflow-hidden flex flex-col w-full min-h-[400px] h-[75dvh] shadow-sm items-center max-w-screen-md bg-white ">
         <div
           className={cn(
             "grid grid-cols-3 w-full",

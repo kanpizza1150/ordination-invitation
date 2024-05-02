@@ -15,7 +15,7 @@ const Tab1 = () => {
           <p className="text-center text-sm italic text-gold-1 ">
             มีความยินดีขอเรียนเชิญ
           </p>
-          <p className="text-lg text-center text-gold-1 font-semibold ">
+          <p className="text-lg text-center text-gray-2 font-semibold ">
             {replaceAll(guest, "%20", "")}
           </p>
           <p className="text-center text-sm italic text-gold-1 ">
