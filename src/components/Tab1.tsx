@@ -11,7 +11,7 @@ const Tab1 = () => {
   const invite = useMemo(() => {
     if (guest) {
       return (
-        <div className="flex flex-col items-center justify-center gap-1">
+        <div className="flex flex-col items-center justify-center gap-1 px-2">
           <p className="text-center text-xs">มีความยินดีขอเรียนเชิญ</p>
           <p className="text-lg text-center text-gold-1 font-semibold italic">
             {replaceAll(guest, "%20", "")}
@@ -24,23 +24,24 @@ const Tab1 = () => {
     }
     return (
       <p className="text-center">
-        มีความยินดีขอเรียนเชิญท่านร่วมอนุโมทนาบุญ เนื่องในงานอุปสมบท
+        มีความยินดีขอเรียนเชิญญาติ มิตร และท่านที่เคารพนับถือ ร่วมอนุโมทนาบุญ
+        เนื่องในงานอุปสมบท
       </p>
     )
   }, [guest])
   return (
     <div className="flex flex-col gap-4 justify-between h-full">
       <div className="flex flex-col p-2 justify-center items-center rounded-md text-gold-1 ">
+        <p className="font-semibold text-sm">นายวิวัฒน์ นิติกาญจนา</p>
+        <p className="font-semibold text-sm">ส.ส.บุญยิ่ง นิติกาญจนา</p>
         <p className="font-semibold text-sm">
-          นาง ฮุ่ยเค็ง แซ่เฮ้ง <span className="text-xs">(ยาย)</span>
+          ส.ส.ชัยทิพย์ (ส.ส.เส็ง) กมลพันธ์ทิพย์
         </p>
-        <p className="font-semibold text-sm">
-          ร.ต.ต. สมโภช นกทองอุทัย <span className="text-xs">(บิดา)</span>
-        </p>
-        <p className="font-semibold text-sm">
-          นาง วิมลนันท์ นกดำ <span className="text-xs">(มารดา)</span>
-        </p>
-        <p className="text-xs">(เจ้าภาพ)</p>
+        <p className="font-semibold text-sm">นาง ฮุ่ยเค็ง แซ่เฮ้ง</p>
+        <p className="text-xs">(ประธาน)</p>
+        <p className="font-semibold text-sm">ร.ต.ต. สมโภช นกทองอุทัย</p>
+        <p className="font-semibold text-sm">นาง วิมลนันท์ นกดำ</p>
+        <p className="text-xs">(บิดา-มารดา)</p>
       </div>
       {invite}
       <div>
