@@ -2,6 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind base;
 
 * {
   font-family: "my-font", "Noto Sans Thai", sans-serif;
@@ -9,10 +10,6 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @layer base {
   @font-face {

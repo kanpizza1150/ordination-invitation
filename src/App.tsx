@@ -57,7 +57,7 @@ export default function App() {
       transform=""
       className="min-h-[100dvh] w-screen flex items-center justify-center p-5 flex-col gap-3 bg-gold-1 bg-opacity-5 bg-[url('./assets/bg.gif')] bg-cover  bg-center md:bg-contain overflow-auto"
     >
-      <div className="h-full flex flex-col items-center gap-3">
+      <div className="h-full flex flex-col items-center gap-3  w-full">
         <div
           className={cn(
             "flex gap-3 md:gap-5 items-center justify-center  rounded-lg p-1 py-2 backdrop-blur-sm bg-white/70 w-full max-w-screen-md",
@@ -89,7 +89,7 @@ export default function App() {
             </h1>
           </div>
         </div>
-        <div className="rounded-lg  overflow-hidden flex flex-col w-full   shadow-sm items-center max-w-screen-md bg-white ">
+        <div className="rounded-lg  overflow-hidden flex flex-col w-full   shadow-sm items-center max-w-screen-md bg-white md:h-full transition">
           <div
             className={cn(
               "grid grid-cols-3 w-full",
@@ -128,7 +128,7 @@ export default function App() {
           </div>
           <div
             className={cn(
-              "w-full flex-1 rounded-b-md p-4 shadow border-t border-gold-1 "
+              "w-full flex-1 rounded-b-md p-4 shadow border-t border-gold-1 h-full transition"
             )}
           >
             <AnimatePresence mode="wait">
@@ -141,7 +141,7 @@ export default function App() {
                 transition={{
                   duration: 0.3,
                 }}
-                className="h-full"
+                className="h-full w-full"
               >
                 {activeTab && activeTab?.render()}
               </motion.div>
