@@ -3,28 +3,28 @@ import Tab2 from "@components/Tab2"
 import Tab3 from "@components/Tab3"
 import { cn } from "@libs/utils"
 import { AnimatePresence, Variants, motion } from "framer-motion"
-import { MouseEvent, ReactNode, useState } from "react"
+import { MouseEvent, ReactElement, useState } from "react"
 import AnimatedSection from "./components/AnimatedSection"
 interface ITab {
   name: string
   label: string
-  render: () => ReactNode
+  render: ReactElement
 }
 const tabs: ITab[] = [
   {
     name: "1",
     label: "เรียนเชิญ",
-    render: () => <Tab1 />,
+    render: <Tab1 />,
   },
   {
     name: "2",
     label: "กำหนดการ",
-    render: () => <Tab2 />,
+    render: <Tab2 />,
   },
   {
     name: "3",
     label: "สถานที่จัดงาน",
-    render: () => <Tab3 />,
+    render: <Tab3 />,
   },
 ]
 const tabContentVariants: Variants = {
@@ -143,7 +143,7 @@ export default function App() {
                 }}
                 className="h-full w-full"
               >
-                {activeTab && activeTab?.render()}
+                {activeTab && activeTab?.render}
               </motion.div>
             </AnimatePresence>
           </div>
