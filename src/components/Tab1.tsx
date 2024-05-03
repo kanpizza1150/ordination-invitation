@@ -33,13 +33,22 @@ const Tab1 = () => {
   }, [guest])
 
   return (
-    <div className="flex flex-col gap-4 justify-between h-full">
-      <div className="flex flex-col p-2 justify-center items-center rounded-sm text-gold-1 gap-4">
+    <div className="flex flex-col gap-4 justify-between  pb-3">
+      <div className="flex flex-col p-2 justify-center items-center rounded-sm text-gold-1 gap-4 ">
         <div className="relative flex flex-col justify-center items-center border border-gold-1 rounded-md w-full p-3">
           <p className="font-semibold">นายวิวัฒน์ นิติกาญจนา</p>
+          <p className="text-[0.7rem] font-thin">
+            นายกองค์การบริหารส่วนจังหวัดราชบุรี
+          </p>
           <p className="font-semibold">ส.ส.บุญยิ่ง นิติกาญจนา</p>
+          <p className="text-[0.7rem] font-thin">
+            สมาชิกสภาผู้แทนราษฎรจังหวัดราชบุรี
+          </p>
           <p className="font-semibold">ส.ส.ชัยทิพย์ (ส.ส.เส็ง) กมลพันธ์ทิพย์</p>
-          <p className="font-semibold">นาง ฮุ่ยเค็ง แซ่เฮ้ง </p>
+          <p className="text-[0.7rem] font-thin">
+            สมาชิกสภาผู้แทนราษฎรจังหวัดราชบุรี
+          </p>
+          <p className="font-semibold">คุณยายฮุ่ยเค็ง (หมวย) แซ่เฮ้ง</p>
           <div className="text-sm bg-white absolute -bottom-3 tracking-wider ">
             (ประธาน)
           </div>
@@ -63,7 +72,7 @@ const Tab1 = () => {
       </div>
 
       <div className="flex flex-col items-center justify-center gap-1">
-        <img alt="temple" src="/temple.svg" className="max-h-[10dvh] h-full" />
+        <img alt="temple" src="/temple.svg" className="max-h-[10dvh] " />
         <p className="text-center text-xs italic text-gray-2 ">
           “กรรมใดที่เคยล่วงเกินท่าน ด้วยกายกรรม วจีกรรม มโนกรรม
           ขอโปรดอโหสอกรรมแต่ ผู้อุปสมบทด้วยเถิด”
