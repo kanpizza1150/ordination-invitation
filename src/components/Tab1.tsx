@@ -19,7 +19,7 @@ const Tab1 = () => {
             {replaceAll(guest, "%20", "")}
           </p>
           <p className="text-center text-sm italic text-gold-1 ">
-            ไปร่วมอนุโมทนาบุญ เนื่องในงานอุปสมบท
+            ร่วมอนุโมทนาบุญ เนื่องในงานอุปสมบท
           </p>
         </div>
       )
