@@ -16,7 +16,7 @@ const Tab1 = () => {
             มีความยินดีขอเรียนเชิญ
           </p>
           <p className="text-lg text-center  text-gold-1  font-semibold ">
-            {replaceAll(guest, "%20", "")}
+            {replaceAll(replaceAll(guest, "%20", " "), "_", " ")}
           </p>
           <p className="text-center text-sm italic text-gray-2">
             ร่วมอนุโมทนาบุญ เนื่องในงานอุปสมบท
