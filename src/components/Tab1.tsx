@@ -55,7 +55,7 @@ const Tab1 = () => {
         </div>
         <div className="relative flex flex-col justify-center items-center border border-gold-1 rounded-md w-full p-3">
           <p className="font-semibold">ร.ต.ต. สมโภช นกทองอุทัย</p>
-          <p className="font-semibold">นาง วิมลนันท์ นกดำ</p>
+          <p className="font-semibold">สท. วิมลนันท์ นกดำ</p>
           <div className="text-sm bg-white absolute -bottom-3 tracking-wider ">
             (บิดา-มารดา)
           </div>
