@@ -12,13 +12,13 @@ const Tab1 = () => {
     if (guest) {
       return (
         <div className="flex flex-col items-center justify-center gap-1 px-2">
-          <p className="text-center text-sm italic text-gold-1 ">
+          <p className="text-center text-sm italic text-gray-2 ">
             มีความยินดีขอเรียนเชิญ
           </p>
-          <p className="text-lg text-center text-gray-2 font-semibold ">
+          <p className="text-lg text-center  text-gold-1  font-semibold ">
             {replaceAll(guest, "%20", "")}
           </p>
-          <p className="text-center text-sm italic text-gold-1 ">
+          <p className="text-center text-sm italic text-gray-2">
             ร่วมอนุโมทนาบุญ เนื่องในงานอุปสมบท
           </p>
         </div>
