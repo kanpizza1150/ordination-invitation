@@ -47,16 +47,16 @@ const section2 = [
 const renderItem = (items: { icon: string; label: string; time: string }[]) => {
   return items?.map((v, idx) => (
     <VerticalTimelineElement
-      position={idx % 2 === 0 ? "left" : "right"}
+      position={"right"}
       visible={false}
       key={v?.time}
       contentStyle={{ boxShadow: "none", padding: 0 }}
-      iconClassName="shadow-none bg-white rounded-full p-2 border-2 border-gold-1 w-12 h-12 flex items-center justify-center"
+      iconClassName="shadow-none bg-white rounded-full p-2 border-2 border-gold-1 w-12 h-12 flex items-center justify-center overflow-hidden"
       iconStyle={{}}
       contentArrowStyle={{ display: "none" }}
       icon={<img src={v?.icon} alt={v?.label} className="w-12" />}
     >
-      <div className="flex flex-col gap-0">
+      <div className="flex flex-col gap-0  md:my-1 lg:my-4">
         <p className="text-gray-2 !text-base !m-0 !p-0 !font-bold">{v?.time}</p>
         <p className="text-gold-1 !text-sm !m-0 !p-0 !font-normal">
           {v?.label}
