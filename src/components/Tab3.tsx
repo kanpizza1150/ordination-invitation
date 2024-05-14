@@ -4,8 +4,8 @@ import { ReactNode, useMemo } from "react"
 const center = { lat: 13.516843401466732, lng: 99.95311197754333 }
 const parkingCenter = { lat: 13.517761, lng: 99.952589 }
 
-const parkingLink = `https://maps.google.com/maps?ll=13.517754,99.952582&z=22&t=m&hl=en-US&gl=US&mapclient=apiv3&cid=16355480707547546646`
-const placeLink = `https://www.google.com/maps?ll=13.516843,99.953112&z=22&t=m&hl=en-US&gl=US&mapclient=apiv3&cid=12066162747196082077`
+const parkingLink = `https://maps.google.com/maps?ll=13.517754,99.952582&z=22&t=m&hl=th-TH&gl=US&mapclient=apiv3&cid=16355480707547546646`
+const placeLink = `https://www.google.com/maps?ll=13.516843,99.953112&z=22&t=m&hl=th-TH&gl=US&mapclient=apiv3&cid=12066162747196082077`
 const Button = ({ children, to }: { children: ReactNode; to: string }) => {
   return (
     <a
